@@ -20,3 +20,12 @@
 .ad-banner #banner-creative{position:absolute;top:0;left:50%;display:flow-root;width:max-content;max-width:none;min-height:0;margin:0;transform-origin:top center;transform:translateX(-50%) scale(var(--ad-scale,1))}
 .ad-banner #banner-creative iframe,.ad-banner #banner-creative img{max-width:none}
 .ad-banner>button{position:absolute;right:7px;top:7px;width:30px;height:30px;border:1px solid var(--line);border-radius:50%;background:var(--surface);color:var(--ink);font-size:21px}
+
+/* Custom file picker keeps the page controls in English on every browser locale. */
+.dropzone input[type=file]{position:absolute;width:1px;height:1px;min-height:0;margin:0;padding:0;border:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.dropzone{position:relative;cursor:pointer;min-width:0}
+.upload-control{display:flex;align-items:center;flex-wrap:wrap;gap:10px 14px;width:100%;min-width:0;margin-top:10px}
+.upload-button{display:inline-flex;align-items:center;justify-content:center;padding:10px 16px;border-radius:6px;background:var(--accent);color:var(--on-accent);font-size:12px;font-weight:700;flex-shrink:0}
+.selected-file{min-width:0;max-width:100%;overflow-wrap:anywhere;color:var(--muted);font-size:12px}
+.dropzone:hover .upload-button{filter:brightness(1.08)}
+.dropzone:focus-within .upload-button{outline:3px solid var(--accent);outline-offset:4px}
