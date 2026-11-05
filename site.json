@@ -1,0 +1,12 @@
+{
+  "slug": "cuecraft",
+  "brand": "Cuecraft",
+  "kicker": "Put every word in its place.",
+  "title": "Right words.<br><em>Perfect timing.</em>",
+  "desc": "Convert SRT and WebVTT, shift timestamps and check overlaps. Small fixes for a smoother viewing experience.",
+  "accent": "#b4a0ff",
+  "dark": "#f0edf9",
+  "kind": "subtitle",
+  "port": "4180",
+  "design": "cinema workspace / plum / timeline"
+}
