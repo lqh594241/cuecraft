@@ -22,7 +22,11 @@ npm run build
 
 ## 广告与统计
 
-`index.html` 中 `AHREFS_ANALYTICS_START/END`、`AD_HEAD_START/END`、`AD_BANNER_START/END`、`AD_BODY_START/END` 均预留为空。顶部横幅是正常文档流的全宽区域，可关闭；粘贴本站专属广告位代码后移除 `#ad-banner` 的 hidden。不要复制其他站的广告位或重复添加同一脚本。启用后更新隐私说明。本站未加载真实广告或统计。
+`ads.js` 已接入本次提供的 Cuecraft 专属 HilltopAds 横幅与弹窗链接。横幅在页面顶部正常占位、全宽，可用 × 关闭；空广告位或加载失败时折叠，不覆盖工具。宽幅广告在手机上等比缩放。
+
+首次真实点击 `#convert`（Prepare subtitles）、`#save`（Download subtitles）或 `#copy`（Copy output）时尝试打开一次广告新标签页；每次页面加载最多一次，不拦截原功能。示例、清空、导航、文件选择与横幅关闭均不触发。浏览器可能限制弹窗，页面不会反复重试。
+
+`index.html` 保留了你已有的 Ahrefs 代码和网站验证 meta，未重复添加。隐私说明已更新。构建会自动包含 `ads.js`。广告投放内容和是否填充由广告平台控制。
 
 ## 范围
 
